@@ -15,8 +15,8 @@ Then open http://localhost:8000.
 
 1. **Add your photo** — replace `assets/avatar.svg` with a square photo (e.g. `profile.jpg`)
    and update the `<img>` tag in `index.html`.
-2. **Add GitHub / LinkedIn links** — search for `TODO` in `index.html` and replace
-   the placeholder `href="#"` with your profile URLs.
+2. **Add your LinkedIn link** — search for `TODO` in `index.html` and replace
+   the placeholder `href="#"` with your LinkedIn profile URL.
 3. **Customize the bio** — adjust the About paragraph in `index.html` to your liking.
 
 ## Publish on GitHub Pages
