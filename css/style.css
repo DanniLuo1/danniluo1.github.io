@@ -15,7 +15,7 @@
   --accent: #b45309;
   --accent-ink: #8a3f06;
   --accent-soft: #f6ecdd;
-  --red: #b3352b;
+  --red: #b4540a;
   --serif: "Charter", "Bitstream Charter", "Cambria", Georgia, "Times New Roman", serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -193,28 +193,41 @@ button:focus-visible {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 6px 0;
+  gap: 6px 18px;
   color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.contact li + li::before {
-  content: "·";
-  margin: 0 10px;
-  color: var(--faint);
 }
 
 .contact a {
   color: var(--muted);
-  text-decoration: none;
-  border-bottom: 1px solid var(--line);
-  padding-bottom: 1px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.15s ease, transform 0.15s ease;
 }
 
 .contact a:hover {
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.contact svg {
+  width: 21px;
+  height: 21px;
+  display: block;
+}
+
+/* inline text links */
+.text-link {
+  color: var(--red);
+  text-decoration: underline;
+  text-decoration-color: var(--red);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.text-link:hover {
   color: var(--accent-ink);
-  border-bottom-color: var(--accent);
+  text-decoration-color: var(--accent-ink);
 }
 
 /* ------------------------------- sections ------------------------------- */
@@ -231,9 +244,6 @@ main {
 }
 
 .section h2 {
-  display: flex;
-  align-items: center;
-  gap: 12px;
   font-size: 0.98rem;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -242,15 +252,6 @@ main {
   margin-bottom: 26px;
   padding-bottom: 12px;
   border-bottom: 1px solid var(--line);
-}
-
-.section h2::before {
-  content: "";
-  width: 20px;
-  height: 3px;
-  border-radius: 2px;
-  background: var(--accent);
-  flex-shrink: 0;
 }
 
 .section > p {
@@ -411,7 +412,6 @@ main {
   grid-template-columns: 180px 1fr;
   gap: 16px;
   padding: 12px 0;
-  border-bottom: 1px solid var(--line-soft);
   align-items: start;
 }
 
@@ -424,10 +424,6 @@ main {
 
 .skill-row dd {
   color: var(--muted);
-}
-
-.skill-row:last-child {
-  border-bottom: none;
 }
 
 /* ------------------------------- footer ------------------------------- */
