@@ -15,6 +15,7 @@
   --accent: #b45309;
   --accent-ink: #8a3f06;
   --accent-soft: #f6ecdd;
+  --red: #b3352b;
   --serif: "Charter", "Bitstream Charter", "Cambria", Georgia, "Times New Roman", serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -352,17 +353,9 @@ main {
   margin-bottom: 6px;
 }
 
-.badge {
-  display: inline-block;
-  font-size: 0.8rem;
+.highlights {
+  color: var(--red);
   font-weight: 600;
-  color: var(--accent-ink);
-  background: var(--accent-soft);
-  border: 1px solid #efdfc9;
-  border-radius: 999px;
-  padding: 2px 11px;
-  margin: 0 6px 4px 0;
-  white-space: nowrap;
 }
 
 .entry-list {
