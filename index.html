@@ -4,20 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Danni Luo — Undergraduate student at the University of Toronto specializing in Data Science, with experience in AI, LLM, and agent engineering.">
+  <meta property="og:title" content="Danni Luo">
+  <meta property="og:description" content="Data Science @ University of Toronto">
+  <meta property="og:type" content="website">
   <title>Danni Luo</title>
+  <link rel="icon" href="assets/avatar.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header class="site-header">
+  <div class="nav-wrap">
     <nav class="site-nav" aria-label="Page sections">
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
+      <a class="nav-brand" href="#top" aria-label="Back to top">DL</a>
+      <span class="nav-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+      </span>
     </nav>
+  </div>
 
+  <header class="site-header" id="top">
     <div class="identity">
       <div class="avatar-wrap">
         <!-- Replace assets/avatar.svg with your photo (e.g. profile.jpg) -->
@@ -25,13 +34,13 @@
       </div>
       <div class="identity-text">
         <h1>Danni Luo</h1>
-        <p class="tagline">AI / LLM / Agent Engineering &middot; Data Science @ University of Toronto</p>
+        <p class="tagline">Junior &middot; Data&nbsp;Science @ University&nbsp;of&nbsp;Toronto</p>
         <ul class="contact">
-          <li><a href="mailto:luo966398@gmail.com">luo966398@gmail.com</a></li>
-          <li>587-578-1096</li>
-          <li><a href="https://github.com/DanniLuo1" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="mailto:luo966398@gmail.com" aria-label="Email: luo966398@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a></li>
+          <li><a href="tel:+15875781096" aria-label="Phone: 587-578-1096"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a></li>
+          <li><a href="https://github.com/DanniLuo1" target="_blank" rel="noopener" aria-label="GitHub profile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a></li>
           <!-- TODO: replace href with your LinkedIn profile URL -->
-          <li><a href="#" class="placeholder" aria-label="LinkedIn profile (add link)">LinkedIn</a></li>
+          <li><a href="#" class="placeholder" aria-label="LinkedIn profile (add link)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a></li>
         </ul>
       </div>
     </div>
@@ -42,7 +51,7 @@
     <section id="about" class="section">
       <h2>About</h2>
       <p>
-        I am an undergraduate student at the University of Toronto pursuing a
+        I am an undergraduate student at the <a class="text-link" href="https://www.utoronto.ca" target="_blank" rel="noopener">University of Toronto</a> pursuing a
         Data Science Specialist and a Mathematical Applications in Economics
         and Finance Specialist. I care about building AI systems that are
         practical, reliable, and genuinely useful &mdash; from LLM-powered
@@ -54,52 +63,79 @@
 
     <section id="education" class="section">
       <h2>Education</h2>
-      <div class="entry">
-        <div class="entry-head">
-          <h3>University of Toronto</h3>
-          <span class="entry-date">Sep 2024 &ndash; Apr 2028 (Expected)</span>
+      <div class="entry with-logo">
+        <div class="entry-logo">
+          <img class="logo-crest" src="assets/logos/uoft.png" alt="University of Toronto crest" loading="lazy">
         </div>
-        <p class="entry-sub">Bachelor of Science &middot; Data Science Specialist &amp; Mathematical Applications in Economics and Finance Specialist</p>
-        <p class="entry-meta">GPA: 3.79/4.00 &middot; Dean&rsquo;s List (2025, 2026) &middot; International Scholar Award</p>
-        <p class="entry-meta">Relevant coursework: Data Structures &amp; Algorithms, Probability &amp; Statistics, Machine Learning, Statistical Modeling, Microeconomics, Macroeconomics</p>
+        <div class="entry-content">
+          <div class="entry-head">
+            <h3>University of Toronto</h3>
+            <span class="entry-date">Sep &rsquo;24 &ndash; Apr &rsquo;28&ast;</span>
+          </div>
+          <p class="entry-sub">Bachelor of Science &middot; Data Science Specialist<br>&amp; Mathematical Applications in Economics and Finance Specialist</p>
+          <p class="entry-meta highlights">GPA 3.79/4.00 &middot; Dean&rsquo;s List &rsquo;25 &amp; &rsquo;26 &middot; International Scholar Award</p>
+          <p class="entry-meta">Relevant coursework: Data Structures &amp; Algorithms, Probability &amp; Statistics, Machine Learning, Statistical Modeling, Microeconomics, Macroeconomics</p>
+        </div>
       </div>
     </section>
 
     <section id="experience" class="section">
       <h2>Experience</h2>
-      <div class="entry">
-        <div class="entry-head">
-          <h3>AI Product &amp; Data Science Intern</h3>
-          <span class="entry-date">Jun 2026 &ndash; Jul 2026</span>
+      <div class="entry with-logo">
+        <div class="entry-logo logo-stack">
+          <figure class="logo-item">
+            <img class="logo-leopard" src="assets/logos/ebao.png" alt="Ebao leopard mark" loading="lazy">
+            <figcaption>Ebao</figcaption>
+          </figure>
+          <figure class="logo-item">
+            <img class="logo-ram" src="assets/logos/lingyang.png" alt="Alibaba Lingyang mark" loading="lazy">
+            <figcaption>Lingyang</figcaption>
+          </figure>
         </div>
-        <p class="entry-sub">Ebao Network Technology Co., Ltd.</p>
-        <ul class="entry-list">
-          <li>Contributed to domain-specific AI agents for international trade with Alibaba Lingyang, supporting supplier matching, OCR document processing, and intelligent business workflows.</li>
-          <li>Built Python data-processing workflows to clean, standardize, and analyze 300,000+ OCR-generated customs product records, identifying deterministic one-to-one correction mappings.</li>
-          <li>Designed methods to detect systematic OCR correction patterns and automate product-name normalization for downstream AI-enabled workflows.</li>
-        </ul>
+        <div class="entry-content">
+          <div class="entry-head">
+            <h3>AI Product &amp; Data Science Intern</h3>
+            <span class="entry-date">Jun &rsquo;26 &ndash; Jul &rsquo;26</span>
+          </div>
+          <p class="entry-sub"><a class="text-link" href="https://www.smartebao.com" target="_blank" rel="noopener">Ebao Network Technology Co., Ltd.</a> &middot; with <a class="text-link" href="https://www.lydaas.com" target="_blank" rel="noopener">Alibaba Lingyang</a></p>
+          <ul class="entry-list">
+            <li>Contributed to domain-specific AI agents for international trade with Alibaba Lingyang, supporting supplier matching, OCR document processing, and intelligent business workflows.</li>
+            <li>Built Python data-processing workflows to clean, standardize, and analyze 300,000+ OCR-generated customs product records, identifying deterministic one-to-one correction mappings.</li>
+            <li>Designed methods to detect systematic OCR correction patterns and automate product-name normalization for downstream AI-enabled workflows.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section id="projects" class="section">
       <h2>Selected Projects</h2>
 
-      <div class="entry">
-        <div class="entry-head">
-          <h3>BetterBlueprint &mdash; LLM-Powered Health Recommendation Application</h3>
-          <span class="entry-date">Sep 2025 &ndash; Dec 2025</span>
+      <div class="entry with-logo">
+        <div class="entry-logo">
+          <img class="project-art-img" src="assets/projects/betterblueprint.svg" alt="Hand-drawn illustration of a blueprint sheet carrying a heartbeat pulse line, with a small heart" loading="lazy">
         </div>
-        <p class="entry-sub">Java &middot; Swing &middot; Gemini API &middot; Git</p>
-        <p class="entry-body">Developed an AI-powered health recommendation application using Java and the Gemini API, structured with Clean Architecture and comprehensive testing.</p>
+        <div class="entry-content">
+          <div class="entry-head">
+            <h3>LLM-Powered Health Recommendation Application</h3>
+            <span class="entry-date">Sep &rsquo;25 &ndash; Dec &rsquo;25</span>
+          </div>
+          <p class="entry-sub">Health Agent &middot; Agentic Recommendation Algorithm</p>
+          <p class="entry-body">Developed BetterBlueprint, an AI-powered health recommendation application using Java and the Gemini API, structured with Clean Architecture and comprehensive testing.</p>
+        </div>
       </div>
 
-      <div class="entry">
-        <div class="entry-head">
-          <h3>AI Job Market Analysis in North America</h3>
-          <span class="entry-date">Mar 2026 &ndash; Apr 2026</span>
+      <div class="entry with-logo">
+        <div class="entry-logo">
+          <img class="project-art-img" src="assets/projects/jobmarket.svg" alt="Hand-drawn illustration of a magnifying glass reading a field of bar-chart marks" loading="lazy">
         </div>
-        <p class="entry-sub">Python &middot; Machine Learning &middot; Statistical Modeling</p>
-        <p class="entry-body">Analyzed 150,000+ AI job postings using logistic regression, classification, K-means clustering, feature engineering, AUROC/RMSE evaluation, and statistical inference.</p>
+        <div class="entry-content">
+          <div class="entry-head">
+            <h3>AI Job Market Analysis in North America</h3>
+            <span class="entry-date">Mar &rsquo;26 &ndash; Apr &rsquo;26</span>
+          </div>
+          <p class="entry-sub">Machine Learning &middot; Statistical Modeling</p>
+          <p class="entry-body">Analyzed 150,000+ AI job postings using logistic regression, classification, K-means clustering, feature engineering, AUROC/RMSE evaluation, and statistical inference.</p>
+        </div>
       </div>
     </section>
 
@@ -107,24 +143,12 @@
       <h2>Skills</h2>
       <dl class="skills">
         <div class="skill-row">
-          <dt>Programming &amp; Tools</dt>
-          <dd>Python, Java, R, Git, Excel</dd>
-        </div>
-        <div class="skill-row">
-          <dt>Machine Learning</dt>
-          <dd>Regression, Classification, Clustering</dd>
-        </div>
-        <div class="skill-row">
-          <dt>Data Science</dt>
-          <dd>Data Cleaning, Data Visualization, Statistical Modeling</dd>
-        </div>
-        <div class="skill-row">
-          <dt>Software Design</dt>
-          <dd>Clean Architecture, Unit Testing, Error Handling</dd>
+          <dt>Profession</dt>
+          <dd><ul class="chip-row"><li>Data Cleaning</li><li>Statistical Modeling</li><li>Agent Engineering</li></ul></dd>
         </div>
         <div class="skill-row">
           <dt>Languages</dt>
-          <dd>English (IELTS 7.5) &middot; Chinese (Native) &middot; Japanese (Elementary)</dd>
+          <dd><ul class="chip-row"><li>English · IELTS 7.5</li><li>Chinese · Native</li><li>Japanese · Elementary</li></ul></dd>
         </div>
       </dl>
     </section>
@@ -132,7 +156,11 @@
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Danni Luo &middot; Toronto, Canada</p>
+    <div class="footer-row">
+      <p>&copy; <span id="year"></span> Danni Luo &middot; Toronto, Canada</p>
+      <p class="footer-note">Built with plain HTML &amp; CSS</p>
+    </div>
+    <p class="footnote">&ast; Expected graduation date</p>
   </footer>
 
   <script>

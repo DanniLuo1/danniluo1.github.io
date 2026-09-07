@@ -3,6 +3,22 @@
 A minimal, academic-style personal website (inspired by Kaiming He's homepage),
 built with plain HTML/CSS and ready to publish on GitHub Pages.
 
+## Assets
+
+- `assets/avatar.svg` — hand-drawn cartoon portrait avatar in Anthropic's
+  editorial style (oat background, ivory carrier, naive black ink, clay
+  accent). Regenerate with `python3 assets/make_avatar.py <out-dir>`
+  (no dependencies).
+- `assets/logos/` — institution marks downloaded from official sites, cut
+  out and exported with transparent backgrounds: University of Toronto crest
+  (utoronto.ca), Ebao leopard mark (smartebao.com), Alibaba Lingyang ram
+  mark (lydaas.com).
+- `assets/projects/` — hand-drawn editorial illustrations for the project
+  cards, in Anthropic's visual language (flat accent background, irregular
+  ivory carrier shape, naive black ink strokes). Generated programmatically
+  as SVG — see `assets/projects/make_art.py` (requires no dependencies to
+  regenerate the SVGs; PNG previews rendered with cairosvg).
+
 ## Preview locally
 
 ```bash
